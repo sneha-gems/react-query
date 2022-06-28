@@ -7,9 +7,11 @@ import "antd/dist/antd.css";
 
 export default function List() {
   const { data, error, isLoading, status } = useQuery("users", useList);
+
   if (isLoading) {
     return <>.....Loading</>;
   }
+
   if (status === "error") {
     return <>Error:{error.message}</>;
   }
