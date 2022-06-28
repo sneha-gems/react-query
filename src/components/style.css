@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.a-comp {
+  @apply flex justify-center items-center mx-20;
+}
+
+.btm-comp {
+  @apply text-2xl bg-blue-500;
+}
